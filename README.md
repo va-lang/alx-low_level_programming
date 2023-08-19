@@ -1,2 +1,1 @@
-More functions, more nested loops
-C
+C programming langauge start
