@@ -1,16 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - prints the name of the program
- * @argc: number of arguments
- * @argv: array of arguments
+ * main - Program that prints its name, followed by a new line.
+ * @argc: Number of command lines arguments.
+ * @argv: Character of arrays.
  *
- * Return: Always 0 (Success)
+ * Return: 0.
  */
-int main(int argc __attribute__((unused)), char *argv[])
+int main(__attribute__((unused)) int argc, char *argv[])
 {
-	printf("%s\n", *argv);
+	int i = 0;
 
+	while (*(argv[0] + i) != '\0')
+	{
+		putchar(*(argv[0] + i));
+		i++;
+	}
+	putchar('\n');
 	return (0);
 }
-
